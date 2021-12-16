@@ -1,4 +1,5 @@
 from math import sin, radians
+
 def triangleSquare():
     side=int(input('Enter triangle side: '))
     corner1=int(input('Enter triangle corner 1: '))
