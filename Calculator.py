@@ -25,16 +25,19 @@ while running:
     # Store the user input an operator
     o = menu()
 
-    # Convert strings into integers
-    a = int(input("Enter a: "))
-    if o not in ('sin', 'cos', 'log', 'sqrt'):
-        b = int(input("Enter b: "))   
-       
+    # Exit
     if o == 'q':
         print('Thank you for using ' + TITLE + '!')
         break
 
-    elif o == "+":
+    # Enter a and b
+    a = int(input("Enter a: "))
+    if o not in ('sin', 'cos', 'log', 'sqrt'):
+        b = int(input("Enter b: "))   
+       
+
+    # Run calculation
+    if o == "+":
         print("a + b = ", a + b)
     elif o == '-':
         print("a - b = ", a - b)
